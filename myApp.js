@@ -31,7 +31,7 @@ const helmet = require('helmet');
 
 // Use `helmet.hidePoweredBy()``
 
-
+app.use(helmet.hidePoweredBy()); // header 를 지워주는 미들웨어 제공
 
 /** 3) Mitigate the risk of clickjacking - `helmet.frameguard()` */
 
