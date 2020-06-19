@@ -46,7 +46,7 @@ app.use(helmet.hidePoweredBy()); // header 를 지워주는 미들웨어 제공
 // We don't need our app to be framed, so you should use `helmet.frameguard()`
 // passing to it the configuration object `{action: 'deny'}`
 
- 
+ helmet.frameguard({action: 'deny'});
 
 /** 4) Mitigate the risk of XSS - `helmet.xssFilter()` */
 
