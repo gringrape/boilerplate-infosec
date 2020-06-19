@@ -4,7 +4,6 @@
  *******************************************/
  
 var express = require('express');
-var helmet = require('helmet');
 var app = express();
 var fs = require('fs');
 var path = require('path');
