@@ -69,7 +69,7 @@ app.use(helmet.hidePoweredBy()); // header 를 지워주는 미들웨어 제공
 
 // Use `helmet.xssFilter()`
 
-
+app.use(helmet.xssFilter());
 
 /** 5) Avoid inferring the response MIME type - `helmet.noSniff()` */
 
